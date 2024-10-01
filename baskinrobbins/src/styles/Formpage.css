@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GimpoGothicRegular00';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.logo-font {
+    font-family: 'TTWanjudaedunsancheB';
+    font-weight: bold;
+    color: #f986bd;
+    font-size: 85px;
+}
+
+.logo-first {
+    font-family: 'TTWanjudaedunsancheB';
+    font-weight: bold;
+    color: #f986bd;
+    font-size: 85px;
+    padding-bottom: 5rem;
+}
+
+.introduce-font {
+    font-family: 'GimpoGothicRegular00';
+    color: #f986bd;
+    margin-top: 2em;
+    font-weight: 400;
+}
+
+.fommenu-font {
+    font-family: 'GimpoGothicRegular00';
+    color: #37271f;
+    font-weight: bold;
+}
+
+.active-menu {
+    background-color: #f986bd;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 1.5; /* 텍스트 높이를 일정하게 */
+    border-right: 1px solid #f986bd; /* 구분선 추가 */
+    outline: none;
+}
+
+/* 기본 구분선을 설정 */
+.nav-link.inactive-menu {
+    position: relative;
+    padding-right: 20px;
+}
+
+/* 각 메뉴 사이에 구분선을 추가 */
+.nav-link.inactive-menu::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background-color: #f986bd;
+}
+
+/* 마지막 nav-item에는 구분선을 표시하지 않음 */
+.nav-item:last-child .nav-link.inactive-menu::after {
+    display: none;
+}
+
+.inactive-menu {
+    color: #f986bd;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    line-height: 1.5; /* 텍스트 높이를 일정하게 */
+}
+
+
+.inactive-menu:hover {
+    text-decoration: none;
+    color: #f986bd;
+}
+
+.nav-item {
+    margin: 0 20px;
+    font-family: "GimpoGothicRegular00";
+}
+
+.nav-link:focus,
+.nav-link:active,.nav-link:hover {
+    color: white;
+    background-color: #f986bd;
+    outline: none;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.nav {
+    position: relative;
+}
+
+
+.fommenu-font1 {
+    font-family: GimpoGothicRegular00;
+}
+
+/* 보더를 짧게 하고 중앙 정렬 */
+.bottom {
+    border-bottom: 2px solid #d4d4d4;
+    width: 50%;
+    margin: 30px auto;
+    padding-bottom: 20px;
+}
+
+/* flavor-container에 flexbox 적용하여 가로 정렬 */
+.flavor-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* 이미지 간 간격 조정 */
+    margin-top: 20px;
+}
+
+.fom-flavor-img {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.flavor-item {
+    text-align: center; /* 이미지와 텍스트를 중앙 정렬 */
+}
+
+.border-grid {
+    width: 80%; /* 부모 요소 너비 */
+    max-width: 1200px; /* 부모 요소의 최대 너비 */
+    height: auto; /* 고정된 높이 설정 */
+    margin: 0 auto;
+    padding-top: 2em;
+    border: 2px solid #d4d4d4;
+    overflow: hidden; /* 이미지가 부모 요소를 넘지 않도록 */
+}
+
+.flavor-main-img {
+    width: 100%; /* 부모 요소의 가로 너비를 100%로 설정 */
+    height: 100%; /* 부모 요소의 세로 높이를 100%로 설정 */
+    object-fit: contain; /* 이미지를 부모 요소 안에 꽉 채우되 비율을 유지 */
+    margin: 0 auto;
+    display: block;
+}
+
+.new-products {
+    width: 90%;  /* 전체 너비 */
+    margin-top: 30px;  /* 보더와의 간격 */
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 8em;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product-item p {
+    font-family: 'GimpoGothicRegular00'; /* 폰트 적용 */
+    color: #37271f;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.flavor-new-h4 {
+    font-family: 'GimpoGothicRegular00';
+    color: #37271f;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 6em;
+}
+
+.disabled-link {
+    pointer-events: none; /* 클릭 차단 */
+    opacity: 0.5; /* 비활성화 상태로 보이게 */
+}
+
+

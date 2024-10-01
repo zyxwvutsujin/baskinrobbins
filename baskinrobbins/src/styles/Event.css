@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GimpoGothicRegular00';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-font {
+    font-family: 'TTWanjudaedunsancheB';
+    font-weight: normal;
+    color: #f986bd;
+    font-size: 85px;
+}
+
+.introduce-font {
+    color: #f986bd;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 40px;
+}
+
+/* 창이 작아졌을 때(예: 태블릿 이하) */
+@media (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card {
+        width: 90%;
+    }
+}
+
+.event-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.event-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+
+h4 {
+    font-size: 18px;
+    font-family: 'GimpoGothicRegular00';
+    margin: 0 0 10px;
+}
+
+p {
+    font-family: 'GimpoGothicRegular00';
+    font-size: 14px;
+    color: #555;
+}
+
+h6 {
+    color: #66d7ff;
+    font-size: 14px;
+    font-family: 'GimpoGothicRegular00';
+    font-weight: bold;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.menu-tab {
+    padding: 13px 30px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    font-family: 'GimpoGothicRegular00';
+}
+
+.menu-tab.active {
+    background-color: #fff;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid transparent;
+}
+
+.menu-tab.inactive {
+    background-color: #fff;
+    color: #999;
+}
+
+.menu-border {
+    border-top: 1px solid #ccc;
+    margin-top: -20px;
+}
+
+/* history*/
+
+.year-selector {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.year-selector span {
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: 'GimpoGothicRegular00';
+    color: #37271f;
+    position: relative;
+}
+
+.year-selector span::after {
+    content: '';
+    position: absolute;
+    right: -10px; /* 연도 뒤쪽에 구분선을 추가 */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 1px;
+    background-color: #bcbcbc; /* 구분선 색상 */
+}
+
+
+
+.year-selector span.active-year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4개씩 가로로 배치 */
+    margin-top: 30px;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.history-img {
+    width: 100%;
+    height: auto;
+}
+
+.history-img + p {
+    font-family: 'GimpoGothicRegular00';
+    color: #37271f;
+    font-weight: bold;
+}

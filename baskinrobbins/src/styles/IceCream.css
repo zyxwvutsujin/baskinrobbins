@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GimpoGothicRegular00';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-font {
+    font-size: 2.5rem;
+    color: #f986bd;
+    margin-bottom: 2rem;
+}
+
+.introduce-font {
+    font-family: 'GimpoGothicRegular00';
+    color: #f986bd;
+    margin-top: 2em;
+    font-weight: 400px;
+}
+
+.icecream-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 한 줄에 5개의 아이템 배치 */
+    gap: 20px;  /* 아이템 간격 */
+    justify-items: center;  /* 아이템을 중앙으로 정렬 */
+    padding: 2rem;
+}
+
+.icecream-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #f3eee4;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.icecream-item:hover {
+    background-color: #fbc1e0;
+}
+
+.icecream-item:hover p {
+    color: white; /* 마우스 올렸을 때 글씨 색을 하얗게 변경 */
+}
+
+.icecream-item:hover .icecream-img {
+    opacity: 0.9;  /* 마우스 올릴 때 이미지 약간 투명해짐 */
+}
+
+.icecream-img {
+    width: 150px;  /* 이미지 크기 */
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.icecream-item p {
+    font-family: 'GimpoGothicRegular00';
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 프리팩 */
+.pre-item:hover {
+    background-color: #b5e48c;
+}
+
+.pre-item:hover .pre-img {
+    opacity: 0.8;  /* 마우스 올릴 때 이미지 약간 투명해짐 */
+}
+
+.pre-img {
+    width: 150px;  /* 이미지 크기 */
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pre-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #f3eee4;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.pre-item:hover p {
+    color: white; /* 마우스 올렸을 때 글씨 색을 하얗게 변경 */
+}
+
+.pre-item p {
+    font-family: 'GimpoGothicRegular00';
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 아이스크림케이크 */
+.ck-item:hover {
+    background-color: #ffe3a3;
+}
+
+.ck-item:hover .ck-img {
+    opacity: 0.8;  /* 마우스 올릴 때 이미지 약간 투명해짐 */
+}
+
+.ck-img {
+    width: 150px;  /* 이미지 크기 */
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.ck-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #f3eee4;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.ck-item:hover p {
+    color: white; /* 마우스 올렸을 때 글씨 색을 하얗게 변경 */
+}
+
+.ck-item p {
+    font-family: 'GimpoGothicRegular00';
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ck-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 한 줄에 5개의 아이템 배치 */
+    gap: 20px;  /* 아이템 간격 */
+    justify-items: center;  /* 아이템을 중앙으로 정렬 */
+    padding: 2rem;
+}
+
+
+/* 디저트 */
+.de-item:hover {
+    background-color: #e8cfff;
+}
+
+.de-item:hover .de-img {
+    opacity: 0.8;  /* 마우스 올릴 때 이미지 약간 투명해짐 */
+}
+
+.de-img {
+    width: 150px;  /* 이미지 크기 */
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.de-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #f3eee4;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.de-item:hover p {
+    color: white; /* 마우스 올렸을 때 글씨 색을 하얗게 변경 */
+}
+
+.de-item p {
+    font-family: 'GimpoGothicRegular00';
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 베버리지 */
+.be-item:hover {
+    background-color: #89dbff;
+}
+
+.be-item:hover .be-img {
+    opacity: 0.8;  /* 마우스 올릴 때 이미지 약간 투명해짐 */
+}
+
+.be-img {
+    width: 150px;  /* 이미지 크기 */
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.be-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #f3eee4;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.be-item:hover p {
+    color: white; /* 마우스 올렸을 때 글씨 색을 하얗게 변경 */
+}
+
+.be-item p {
+    font-family: 'GimpoGothicRegular00';
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* 커피 */
+.co-item:hover {
+    background-color: #eec170;
+}
+
+.co-item:hover .co-img {
+    opacity: 0.8;  /* 마우스 올릴 때 이미지 약간 투명해짐 */
+}
+
+.co-img {
+    width: 150px;  /* 이미지 크기 */
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.co-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #f3eee4;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.co-item:hover p {
+    color: white; /* 마우스 올렸을 때 글씨 색을 하얗게 변경 */
+}
+
+.co-item p {
+    font-family: 'GimpoGothicRegular00';
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: bold;
+}

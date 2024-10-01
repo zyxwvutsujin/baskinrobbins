@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'TTWanjudaedunsancheB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SEBANG_Gothic_Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GimpoGothicRegular00';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'GimpoGothicRegular00';
+}
+a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  cursor: pointer;
+}
+/* textColor*/
+.textColorGray {
+  color: #6b6b6b;
+}
+/* nav */
+.nav li {
+  list-style-type: none;
+}
+.navList {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  gap:3em;
+  transition: all 0.3s ease;
+}
+.transNav .navList {
+  background-color: transparent;
+  color: black;
+}
+.transNav .navLogo {
+  content: url('public/logo.png');
+}
+.pinkNav .navList,
+.transNav:hover .navList{
+  background-color: #f785bc;
+  color: white;
+}
+.pinkNav .navLogo,
+.transNav:hover .navLogo {
+  content: url('public/white_logo.png');
+}
+.navList li {
+  padding: 0.6em 0em;
+}
+.navLogo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.navMenu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navMenu:hover {
+  color: #444444;
+  cursor: pointer;
+}
+.navMenu:hover .subNav{
+  height: 150px;
+}
+.subNav{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: white;
+  transition: height 0.3s ease-in-out;
+}
+.subNavList {
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+.subNavMenu,
+.subNav2Title{
+  font-size: 1.3em;
+  transition: color 0.2s ease;
+}
+.subNavMenu:hover,
+.subNav2List:hover .subNav2Title,
+.subNav2Title:hover,
+.subNav2List .subNavMenu:hover{
+  color:#fd5483;
+}
+.subNav2Layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  gap: 1.5em;
+}
+.subNav2Layout .subNav2List:nth-of-type(1) {
+  border-right: 1px dotted #333333;
+}
+.subNav2List {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: center;
+  padding:0em 2em;
+}
+.subNav2List .subNavList {
+  padding: 0;
+}
+.subNav2List .subNavMenu {
+  font-size: 1em;
+  color: #565656;
+}
+/* main */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 3.2rem;
+}
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.mainTitle {
+  font-family: 'SEBANG_Gothic_Bold';
+  color: #fd5483;
+  font-size: 3em;
+}
+.mainTitlePlay {
+  color: #37110e;
+}
+.mainFirstPage {
+  background-image: url("https://i.pinimg.com/564x/13/fd/c8/13fdc8ae1b6fc741f94abd981b342874.jpg");
+  background-size: auto;
+  background-repeat: repeat;
+}
+.mainPinkPage {
+  background-color: #ffe4ea;
+}
+.mainBetterPage {
+  background-color: #f2e7de;
+}
+.mainPlayPage {
+  background-image: url("https://www.terratintagroup.com/edamtyhe/2023/09/HexaSquare_YellowCorn_900x1200.jpg");
+  background-size: contain;
+}
+/* main First Section */
+.mainBanner {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.mainBannerImg {
+  box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.2);
+  border: 0.5em solid #f986bd;
+  z-index: 2;
+}
+.mainBannerImg img {
+  box-shadow: 0 0 0 10px #cc3d5d, 0 0 0 18px #ec6da2;
+}
+.mainBannerImg,
+.mainBannerImg img {
+  border-radius: 100px;
+}
+.mainBannerBox {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.mainBannerTitle {
+  display: flex;
+  background-color: #ec6da2;
+  box-shadow: 0em 1em 1.3em rgba(0, 0, 0, 0.1),
+  0 0 2.5em #ec6da2 inset,
+  0 0 2.2em #cc3d5d inset;
+}
+.mainBannerImg img {
+  width: 100%;
+  height: auto;
+}
+/*promotion*/
+.promotionCard {
+  margin: 0em 0.8em;
+}
+.card-body {
+  text-align: start;
+}
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 50%;  /* 왼쪽 상단 둥글게 */
+  border-top-right-radius: 50%; /* 오른쪽 상단 둥글게 */
+  border-bottom-left-radius: 0; /* 아래쪽은 네모 */
+  border-bottom-right-radius: 0; /* 아래쪽은 네모 */
+  object-fit: cover;
+}
+.card-date {
+  color: #d8ba96;
+  font-size: 0.8em;
+}
+.card-description {
+  font-size: 0.9em;
+}
+.card-border {
+  background: #d8ba96;
+  height: 2px;
+  border: 0;
+}
+/* newItem */
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainNewItemGrid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 1.2fr 1.2fr;
+  gap: 1em;
+}
+.mainImg {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.subCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.subCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subCardBtn {
+  border-radius: 50%;
+}
+/* Be Better */
+.mainBetterItem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+/* Benefit */
+.mainBenefitItem {
+  padding-left: 10em;
+}
+.mainStoreLayout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5em;
+}
+.mainStoreBox {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: start;
+}
